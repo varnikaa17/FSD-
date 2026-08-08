@@ -1133,3 +1133,139 @@ footer .copyright {
         flex-wrap: wrap;
     }
 }
+/* =========================================================
+   LIGHT THEME
+========================================================= */
+
+body.light-theme {
+    background: #f4f8fd;
+
+    color: #172b4d;
+}
+
+body.light-theme .navbar {
+    background: rgba(255, 255, 255, 0.92);
+
+    border-bottom-color: #dce8f5;
+}
+
+body.light-theme .menu li a {
+    color: #61738b;
+}
+
+body.light-theme .menu li a:hover {
+    color: #2563eb;
+}
+
+body.light-theme .hero {
+    background:
+        radial-gradient(
+            circle at 75% 45%,
+            rgba(56, 189, 248, 0.15),
+            transparent 35%
+        );
+}
+
+body.light-theme .hero-text h1 {
+    color: #10233f;
+}
+
+body.light-theme .hero-description {
+    color: #64748b;
+}
+
+body.light-theme .search-box {
+    background: white;
+
+    border-color: #dce8f5;
+}
+
+body.light-theme .search-box input {
+    color: #172b4d;
+}
+
+body.light-theme .search-box input::placeholder {
+    color: #94a3b8;
+}
+
+body.light-theme .dashboard {
+    color: #2563eb;
+
+    background: white;
+
+    border-color: #cfe0f2;
+}
+
+body.light-theme .career-card {
+    background: linear-gradient(
+        145deg,
+        #ffffff,
+        #eaf5ff
+    );
+
+    border-color: #cfe2f5;
+}
+
+body.light-theme .career-card h3 {
+    color: #10233f;
+}
+
+body.light-theme .career-card p {
+    color: #64748b;
+}
+
+body.light-theme .about-section {
+    background: #edf6ff;
+
+    border-color: #dce8f5;
+}
+
+body.light-theme .section-heading h2 {
+    color: #10233f;
+}
+/* =========================================================
+   JAVASCRIPT MESSAGE
+========================================================= */
+
+.cc-message {
+    position: fixed;
+
+    left: 50%;
+
+    bottom: 25px;
+
+    transform:
+        translate(-50%, 80px);
+
+    padding: 12px 20px;
+
+    background: #10233f;
+
+    color: white;
+
+    border-radius: 9px;
+
+    font-size: 12px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.2);
+
+    opacity: 0;
+
+    pointer-events: none;
+
+    transition: 0.3s ease;
+
+    z-index: 9999;
+
+    max-width: 90%;
+
+    text-align: center;
+}
+
+.cc-message.show {
+    transform:
+        translate(-50%, 0);
+
+    opacity: 1;
+}
