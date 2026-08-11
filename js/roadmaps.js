@@ -108,3 +108,34 @@ categoryButtons.forEach(function (button) {
     );
 
 });
+const roadmapButtons =
+    document.querySelectorAll(".roadmap-button");
+
+
+roadmapButtons.forEach(function (button) {
+
+    button.addEventListener(
+        "click",
+        function (event) {
+
+            event.preventDefault();
+
+            const card =
+                button.closest(".roadmap-card");
+
+            const career =
+                card.querySelector("h3");
+
+            if (career) {
+
+                alert(
+                    career.textContent.trim() +
+                    " roadmap details will be available soon."
+                );
+
+            }
+
+        }
+    );
+
+});
