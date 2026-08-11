@@ -707,3 +707,81 @@ footer p {
     color: #9aa9ba;
     font-size: 9px;
 }
+@media (max-width: 1000px) {
+
+    .nav-links {
+        gap: 18px;
+    }
+
+    .roadmap-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .process-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+
+    .roadmap-navbar {
+        padding: 0 5%;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .roadmap-hero {
+        padding: 60px 5%;
+    }
+
+    .categories-section,
+    .roadmaps-section,
+    .process-section {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .roadmap-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .process-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-content h1 {
+        font-size: 38px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .logo a {
+        font-size: 19px;
+    }
+
+    .dashboard-link {
+        padding: 7px 11px;
+    }
+
+    .roadmap-search {
+        flex-direction: column;
+        padding: 6px;
+    }
+
+    .roadmap-search input {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .roadmap-search button {
+        width: 100%;
+    }
+
+    .roadmap-cta {
+        margin: 50px 5%;
+        padding: 35px 20px;
+    }
+}
