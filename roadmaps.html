@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CareerConnect | Career Roadmaps</title>
+
+    <link rel="stylesheet" href="roadmaps.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <header>
+
+        <nav class="roadmap-navbar">
+
+            <div class="logo">
+                <a href="index.html">CareerConnect</a>
+            </div>
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="roadmaps.html" class="active">
+                        Roadmaps
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">Internships</a>
+                </li>
+
+                <li>
+                    <a href="#">Resume</a>
+                </li>
+
+                <li>
+                    <a href="#">AI Tools</a>
+                </li>
+
+            </ul>
+
+            <div class="nav-actions">
+
+                <a href="dashboard.html" class="dashboard-link">
+                    Dashboard
+                </a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- =========================
+         MAIN
+    ========================== -->
+
+    <main>
+
+
+        <!-- =========================
+             HERO
+        ========================== -->
+
+        <section class="roadmap-hero">
+
+            <div class="hero-content">
+
+                <p class="section-label">
+                    CAREER ROADMAPS
+                </p>
+
+                <h1>
+                    Find Your Path.
+                    <span>Build Your Future.</span>
+                </h1>
+
+                <p>
+                    Explore structured career paths, discover the
+                    skills you need and follow a step-by-step journey
+                    towards your target career.
+                </p>
+
+
+                <!-- Search -->
+
+                <div class="roadmap-search">
+
+                    <input
+                        type="text"
+                        id="roadmap-search"
+                        placeholder="Search a career... e.g. Frontend Developer"
+                    >
+
+                    <button id="search-roadmaps">
+                        Search
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CATEGORIES
+        ========================== -->
+
+        <section class="categories-section">
+
+            <div class="section-heading">
+
+                <p class="section-label">
+                    EXPLORE
+                </p>
+
+                <h2>
+                    Career Categories
+                </h2>
+
+            </div>
+
+
+            <div class="category-buttons">
+
+                <button
+                    class="category-btn active"
+                    data-category="all">
+                    All
+                </button>
+
+                <button
+                    class="category-btn"
+                    data-category="development">
+                    Development
+                </button>
+
+                <button
+                    class="category-btn"
+                    data-category="data">
+                    Data & AI
+                </button>
+
+                <button
+                    class="category-btn"
+                    data-category="security">
+                    Cybersecurity
+                </button>
+
+                <button
+                    class="category-btn"
+                    data-category="other">
+                    Other
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             ROADMAP CARDS
+        ========================== -->
+
+        <section class="roadmaps-section">
+
+            <div class="roadmap-grid">
+
+
+                <!-- Frontend -->
+
+                <article
+                    class="roadmap-card"
+                    data-category="development"
+                    data-title="frontend developer">
+
+                    <div class="roadmap-card-top">
+
+                        <div class="roadmap-icon">
+                            🌐
+                        </div>
+
+                        <span class="difficulty beginner">
+                            Beginner
+                        </span>
+
+                    </div>
+
+                    <h3>
+                        Frontend Developer
+                    </h3>
+
+                    <p>
+                        Learn how to build modern, responsive and
+                        interactive websites.
+                    </p>
+
+                    <div class="skills">
+
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+
+                    </div>
+
+                    <div class="roadmap-info">
+
+                        <span>
+                            ⏱ 4–6 Months
+                        </span>
+
+                        <span>
+                            📚 6 Steps
+                        </span>
+
+                    </div>
+
+                    <a href="#" class="roadmap-button">
+                        View Roadmap →
+                    </a>
+
+                </article>
+
+
+                <!-- Python -->
+
+                <article
+                    class="roadmap-card"
+                    data-category="development"
+                    data-title="python developer">
+
+                    <div class="roadmap-card-top">
+
+                        <div class="roadmap-icon">
+                            🐍
+                        </div>
+
+                        <span class="difficulty beginner">
+                            Beginner
+                        </span>
+
+                    </div>
+
+                    <h3>
+                        Python Developer
+                    </h3>
+
+                    <p>
+                        Build strong Python fundamentals and learn
+                        how to create practical software solutions.
+                    </p>
+
+                    <div class="skills">
+
+                        <span>Python</span>
+                        <span>OOP</span>
+                        <span>Git</span>
+
+                    </div>
+
+                    <div class="roadmap-info">
+
+                        <span>
+                            ⏱ 5–7 Months
+                        </span>
+
+                        <span>
+                            📚 7 Steps
+                        </span>
+
+                    </div>
+
+                    <a href="#" class="roadmap-button">
+                        View Roadmap →
+                    </a>
+
+                </article>
+
+
+                <!-- Java -->
+
+                <article
+                    class="roadmap-card"
+                    data-category="development"
+                    data-title="java developer">
+
+                    <div class="roadmap-card-top">
+
+                        <div class="roadmap-icon">
+                            ☕
+                        </div>
+
+                        <span class="difficulty intermediate">
+                            Intermediate
+                        </span>
+
+                    </div>
+
+                    <h3>
+                        Java Developer
+                    </h3>
+
+                    <p>
+                        Learn Java programming, OOP and the fundamentals
+                        needed for application development.
+                    </p>
+
+                    <div class="skills">
+
+                        <span>Java</span>
+                        <span>OOP</span>
+                        <span>SQL</span>
+
+                    </div>
+
+                    <div class="roadmap-info">
+
+                        <span>
+                            ⏱ 5–8 Months
+                        </span>
+
+                        <span>
+                            📚 7 Steps
+                        </span>
+
+                    </div>
+
+                    <a href="#" class="roadmap-button">
+                        View Roadmap →
+                    </a>
+
+                </article>
+
+
+                <!-- Cybersecurity -->
+
+                <article
+                    class="roadmap-card"
+                    data-category="security"
+                    data-title="cybersecurity">
+
+                    <div class="roadmap-card-top">
+
+                        <div class="roadmap-icon">
+                            🔐
+                        </div>
+
+                        <span class="difficulty intermediate">
+                            Intermediate
+                        </span>
+
+                    </div>
+
+                    <h3>
+                        Cybersecurity
+                    </h3>
+
+                    <p>
+                        Understand networking, security fundamentals,
+                        threats and defensive security practices.
+                    </p>
+
+                    <div class="skills">
+
+                        <span>Networking</span>
+                        <span>Linux</span>
+                        <span>Security</span>
+
+                    </div>
+
+                    <div class="roadmap-info">
+
+                        <span>
+                            ⏱ 6–9 Months
+                        </span>
+
+                        <span>
+                            📚 8 Steps
+                        </span>
+
+                    </div>
+
+                    <a href="#" class="roadmap-button">
+                        View Roadmap →
+                    </a>
+
+                </article>
+
+
+                <!-- AI/ML -->
+
+                <article
+                    class="roadmap-card"
+                    data-category="data"
+                    data-title="ai machine learning">
+
+                    <div class="roadmap-card-top">
+
+                        <div class="roadmap-icon">
+                            🤖
+                        </div>
+
+                        <span class="difficulty intermediate">
+                            Intermediate
+                        </span>
+
+                    </div>
+
+                    <h3>
+                        AI & Machine Learning
+                    </h3>
+
+                    <p>
+                        Explore Python, data handling, machine learning
+                        concepts and practical AI applications.
+                    </p>
+
+                    <div class="skills">
+
+                        <span>Python</span>
+                        <span>ML</span>
+                        <span>Data</span>
+
+                    </div>
+
+                    <div class="roadmap-info">
+
+                        <span>
+                            ⏱ 7–10 Months
+                        </span>
+
+                        <span>
+                            📚 8 Steps
+                        </span>
+
+                    </div>
+
+                    <a href="#" class="roadmap-button">
+                        View Roadmap →
+                    </a>
+
+                </article>
+
+
+                <!-- Data Analyst -->
+
+                <article
+                    class="roadmap-card"
+                    data-category="data"
+                    data-title="data analyst">
+
+                    <div class="roadmap-card-top">
+
+                        <div class="roadmap-icon">
+                            📊
+                        </div>
+
+                        <span class="difficulty beginner">
+                            Beginner
+                        </span>
+
+                    </div>
+
+                    <h3>
+                        Data Analyst
+                    </h3>
+
+                    <p>
+                        Learn how to work with data, create insights
+                        and present information using useful tools.
+                    </p>
+
+                    <div class="skills">
+
+                        <span>Excel</span>
+                        <span>SQL</span>
+                        <span>Python</span>
+
+                    </div>
+
+                    <div class="roadmap-info">
+
+                        <span>
+                            ⏱ 4–7 Months
+                        </span>
+
+                        <span>
+                            📚 6 Steps
+                        </span>
+
+                    </div>
+
+                    <a href="#" class="roadmap-button">
+                        View Roadmap →
+                    </a>
+
+                </article>
+
+
+            </div>
+
+
+            <!-- No results -->
+
+            <div
+                id="no-results"
+                class="no-results">
+
+                <div>
+                    🔎
+                </div>
+
+                <h3>
+                    No roadmaps found
+                </h3>
+
+                <p>
+                    Try searching for another career or select
+                    a different category.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             ROADMAP PROCESS
+        ========================== -->
+
+        <section class="process-section">
+
+            <div class="section-heading">
+
+                <p class="section-label">
+                    YOUR JOURNEY
+                </p>
+
+                <h2>
+                    How Our Roadmaps Work
+                </h2>
+
+            </div>
+
+
+            <div class="process-grid">
+
+                <div class="process-card">
+
+                    <span>
+                        01
+                    </span>
+
+                    <div>
+                        🎯
+                    </div>
+
+                    <h3>
+                        Choose a Career
+                    </h3>
+
+                    <p>
+                        Select a career path that matches
+                        your interests and goals.
+                    </p>
+
+                </div>
+
+
+                <div class="process-card">
+
+                    <span>
+                        02
+                    </span>
+
+                    <div>
+                        📚
+                    </div>
+
+                    <h3>
+                        Learn the Skills
+                    </h3>
+
+                    <p>
+                        Follow the recommended skills and
+                        learning resources step by step.
+                    </p>
+
+                </div>
+
+
+                <div class="process-card">
+
+                    <span>
+                        03
+                    </span>
+
+                    <div>
+                        🛠️
+                    </div>
+
+                    <h3>
+                        Build Projects
+                    </h3>
+
+                    <p>
+                        Practice what you learn by creating
+                        real-world projects.
+                    </p>
+
+                </div>
+
+
+                <div class="process-card">
+
+                    <span>
+                        04
+                    </span>
+
+                    <div>
+                        🚀
+                    </div>
+
+                    <h3>
+                        Get Career Ready
+                    </h3>
+
+                    <p>
+                        Prepare your resume, apply for internships
+                        and start your career journey.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="roadmap-cta">
+
+            <p class="section-label">
+                KEEP MOVING FORWARD
+            </p>
+
+            <h2>
+                Not sure which career is right for you?
+            </h2>
+
+            <p>
+                Explore different paths, compare the skills required
+                and find a direction that matches your interests.
+            </p>
+
+            <a href="dashboard.html">
+                Go to Dashboard
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <h3>
+                CareerConnect
+            </h3>
+
+            <p>
+                Helping students build a better future.
+            </p>
+
+            <div class="footer-links">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="roadmaps.html">
+                    Roadmaps
+                </a>
+
+                <a href="#">
+                    Internships
+                </a>
+
+                <a href="#">
+                    Contact
+                </a>
+
+            </div>
+
+            <p class="copyright">
+                © 2026 CareerConnect. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>
