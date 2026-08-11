@@ -259,3 +259,135 @@ button {
     );
     transition: width 0.4s ease;
 }
+.roadmap-steps-section {
+    padding: 15px 7% 70px;
+}
+
+.roadmap-detail-grid {
+    max-width: 1150px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 17px;
+}
+
+.learning-card {
+    padding: 22px;
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    transition: 0.25s ease;
+}
+
+.learning-card:hover {
+    transform: translateY(-5px);
+    border-color: #c5def4;
+    box-shadow:
+        0 14px 32px rgba(48, 93, 140, 0.12);
+}
+
+.step-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.step-number {
+    color: var(--primary);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.step-status {
+    padding: 5px 9px;
+    border-radius: 20px;
+    background: var(--soft-blue);
+    color: var(--primary);
+    font-size: 8px;
+    font-weight: 600;
+}
+
+.learning-icon {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    border-radius: 11px;
+    background: var(--soft-blue);
+    font-size: 20px;
+}
+
+.learning-card h3 {
+    color: var(--heading);
+    font-size: 15px;
+    margin-bottom: 7px;
+}
+
+.learning-card > p {
+    min-height: 55px;
+    margin-bottom: 15px;
+    color: var(--muted);
+    font-size: 10px;
+    line-height: 1.7;
+}
+
+.topic-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-bottom: 18px;
+}
+
+.topic-list span {
+    padding: 4px 7px;
+    border-radius: 5px;
+    background: #f1f7fc;
+    color: #627b94;
+    font-size: 8px;
+}
+
+.step-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    padding-top: 13px;
+    border-top: 1px solid #edf1f5;
+}
+
+.step-footer > span {
+    color: #8192a6;
+    font-size: 9px;
+}
+
+.complete-btn {
+    padding: 7px 10px;
+    border: 1px solid #cfe2f5;
+    border-radius: 6px;
+    background: var(--soft-blue);
+    color: var(--primary);
+    font-size: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.complete-btn:hover {
+    background: #dceeff;
+}
+
+.learning-card.completed {
+    border-color: #a8dcc5;
+    background: #f8fffb;
+}
+
+.learning-card.completed .complete-btn {
+    background: #eaf8f1;
+    color: #16835b;
+    border-color: #c4e8d5;
+}
