@@ -58,3 +58,87 @@ document.addEventListener("DOMContentLoaded", function () {
     );
 
 });
+const categoryButtons =
+    document.querySelectorAll(".category-btn");
+
+let selectedCategory = "all";
+
+
+function filterByCategory() {
+
+    const searchValue =
+        searchInput.value.trim().toLowerCase();
+
+    let visibleCards = 0;
+
+    roadmapCards.forEach(function (card) {
+
+        const title =
+            card.dataset.title.toLowerCase();
+
+        const category =
+            card.dataset.category.toLowerCase();
+
+        const matchesSearch =
+            title.includes(searchValue);
+
+        const matchesCategory =
+            selectedCategory === "all" ||
+            category === selectedCategory;
+
+        if (
+            matchesSearch &&
+            matchesCategory
+        ) {
+
+            card.style.display = "block";
+
+            visibleCards++;
+
+        } else {
+
+            card.style.display = "none";
+
+        }
+
+    });
+
+
+    if (visibleCards === 0) {
+
+        noResults.style.display = "block";
+
+    } else {
+
+        noResults.style.display = "none";
+
+    }
+
+}
+
+
+categoryButtons.forEach(function (button) {
+
+    button.addEventListener(
+        "click",
+        function () {
+
+            categoryButtons.forEach(
+                function (item) {
+
+                    item.classList.remove("active");
+
+                }
+            );
+
+            button.classList.add("active");
+
+            selectedCategory =
+                button.dataset.category;
+
+            filterByCategory();
+
+        }
+    );
+
+});
