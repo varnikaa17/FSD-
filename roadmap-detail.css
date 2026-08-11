@@ -568,3 +568,102 @@ footer p {
     color: #9aa9ba;
     font-size: 9px;
 }
+@media (max-width: 1000px) {
+
+    .nav-links {
+        gap: 18px;
+    }
+
+    .roadmap-detail-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+
+    .detail-navbar {
+        padding: 0 5%;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .detail-hero {
+        padding: 45px 5% 55px;
+    }
+
+    .overview-section,
+    .roadmap-steps-section,
+    .skills-section,
+    .projects-section {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .roadmap-detail-grid,
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .career-meta {
+        flex-direction: column;
+    }
+
+    .career-meta {
+        gap: 1px;
+    }
+
+    .career-meta div {
+        padding: 11px;
+    }
+
+    .hero-description {
+        font-size: 12px;
+    }
+
+    .detail-hero h1 {
+        font-size: 38px;
+    }
+
+    .career-ready {
+        margin: 20px 5% 60px;
+        padding: 35px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .logo a {
+        font-size: 19px;
+    }
+
+    .dashboard-link {
+        padding: 7px 11px;
+    }
+
+    .detail-hero h1 {
+        font-size: 34px;
+    }
+
+    .section-heading h2 {
+        font-size: 24px;
+    }
+
+    .step-footer {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .complete-btn {
+        width: 100%;
+    }
+
+    .career-ready h2 {
+        font-size: 22px;
+    }
+}
