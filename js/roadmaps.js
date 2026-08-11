@@ -11,60 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const noResults =
         document.getElementById("no-results");
-
-
-    function searchRoadmaps() {
-
-        const searchValue =
-            searchInput.value.trim().toLowerCase();
-
-        let visibleCards = 0;
-
-        roadmapCards.forEach(function (card) {
-
-            const title =
-                card.dataset.title.toLowerCase();
-
-            if (title.includes(searchValue)) {
-
-                card.style.display = "block";
-
-                visibleCards++;
-
-            } else {
-
-                card.style.display = "none";
-
-            }
-
-        });
-
-        if (visibleCards === 0) {
-
-            noResults.style.display = "block";
-
-        } else {
-
-            noResults.style.display = "none";
-
-        }
-
-    }
-
-
-    searchButton.addEventListener(
-        "click",
-        searchRoadmaps
-    );
-
-});
-const categoryButtons =
-    document.querySelectorAll(".category-btn");
-
-let selectedCategory = "all";
-
-
-function filterByCategory() {
+function searchRoadmaps() {
 
     const searchValue =
         searchInput.value.trim().toLowerCase();
@@ -114,6 +61,25 @@ function filterByCategory() {
 
     }
 
+}
+        if (visibleCards === 0) {
+
+            noResults.style.display = "block";
+
+        } else {
+
+            noResults.style.display = "none";
+
+        }
+
+    });
+const categoryButtons =
+    document.querySelectorAll(".category-btn");
+
+let selectedCategory = "all";
+
+function filterByCategory() {
+    searchRoadmaps();
 }
 
 
