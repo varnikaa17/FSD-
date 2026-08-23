@@ -9,6 +9,13 @@ document.addEventListener("DOMContentLoaded", function () {
     const progressPercent =
         document.getElementById("progress-percent");
 
+    const savedSteps =
+    JSON.parse(
+        localStorage.getItem(
+            "frontendRoadmapProgress"
+        )
+    ) || [];
+
     function updateProgress() {
 
         const completedSteps =
@@ -33,6 +40,41 @@ document.addEventListener("DOMContentLoaded", function () {
             progress + "%";
 
     }
+    const completedSteps =
+    Array.from(
+        document.querySelectorAll(
+            ".learning-card.completed"
+        )
+    ).map(function (card) {
+
+        return card.querySelector(
+            ".complete-btn"
+        ).dataset.step;
+
+    });
+
+    localStorage.setItem(
+         "frontendRoadmapProgress",
+         JSON.stringify(completedSteps)
+    );
+    completeButtons.forEach(function (button) {
+
+    const step =
+        button.dataset.step;
+
+    if (savedSteps.includes(step)) {
+
+        const card =
+            button.closest(".learning-card");
+
+        card.classList.add("completed");
+
+        button.textContent =
+            "Completed";
+
+    }
+
+});
 
     completeButtons.forEach(function (button) {
 
